@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <hero1Vue/>
+    <hero2Vue/>
+    <audio hidden autoplay loop>
+    <source src="@/audio/lagu.mp3" type="audio/mpeg">
+    Browsermu tidak mendukung tag audio, upgrade donk!
+    </audio>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import hero1Vue from './components/hero1.vue';
+import hero2Vue from './components/hero2.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    hero1Vue,
+    hero2Vue
   }
 }
 </script>
@@ -23,6 +28,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 </style>
