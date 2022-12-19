@@ -1,10 +1,10 @@
 <template>
-   <div class="wrapper coloured">
+   <div class="col-lg-12 col-md-12 col-sm-12 wrapper hover coloured">
   <section id="testimonials" class="hoc container clear"> 
     <!-- ################################################################################################ -->
     <div class="sectiontitle">
-      <p class="nospace font-xs">Maecenas ultrices faucibus felis</p>
-      <h6 class="heading font-x2">Nunc lacus nulla luctus duis</h6>
+      <!-- <p class="nospace font-xs">Maecenas ultrices faucibus felis</p> -->
+      <h6 class="heading font-x2">Profil Kedua Mempelai</h6>
     </div>
     <article class="one_half first">
       <figure class="clear"><img src="@/chillaid/images/demo/100x100.png" alt="">

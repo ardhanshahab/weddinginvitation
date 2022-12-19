@@ -1,0 +1,20 @@
+<template>
+    <div>
+      <div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2022 - All Rights Reserved - <a href="#">Dhan</a></p>
+    <!-- <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p> -->
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+    </div>
+</template>
+
+<script>
+export default {
+  name: 'footerVue',
+  components: {
+  }
+}
+</script>
