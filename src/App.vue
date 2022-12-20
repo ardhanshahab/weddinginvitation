@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <div v-if="isLoading">
-      <b-button @click="lagu()">cekson</b-button>
+      <div class="col-12 col-md-12 col-sm-12" style="background-color: #1C315E; width: auto; height: 100vh; color: white;">
+        <p>Tanpa Mengurangi Rasa Hormat blablabla</p>
+        <b-button @click="lagu()">cekson</b-button>
+      </div>
     </div>
     <div v-if="!isLoading">
     <!-- <vueAudio src="../audio/lagu.mp3"  :autoPlay="autoplay" :loop="loop"/> -->
@@ -47,11 +50,13 @@ export default {
   },
   methods: {
     lagu(){
-      if(this.isLoading == true){
-        this.isLoading == false;
+
+      if(this.isLoading){
+        this.isLoading = false;
       document.getElementById("lagu").play();
+      console.log(this.isLoading)
       }else{
-        this.isLoading == true
+        this.isLoading = true
       }
 
       // if(this.isLoading == false){
@@ -62,10 +67,10 @@ export default {
 }
   },
   mounted() {    
-    setTimeout(() => {
-      this.isLoading = false;
-      this.lagu()
-    }, 3000);
+    // setTimeout(() => {
+    //   this.isLoading = false;
+    //   this.lagu()
+    // }, 3000);
 
   },
  
