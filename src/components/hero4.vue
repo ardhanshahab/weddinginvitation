@@ -77,7 +77,7 @@ export default {
   },
   data(){
     return{
-      nama: '',
+      name: '',
       pesan: '',
       selected: null,
       options: [

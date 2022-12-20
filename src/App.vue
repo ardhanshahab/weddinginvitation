@@ -1,8 +1,12 @@
 <template>
   <div id="app">
+    <div v-if="isLoading">
+      <b-button @click="lagu()">cekson</b-button>
+    </div>
+    <div v-if="!isLoading">
     <!-- <vueAudio src="../audio/lagu.mp3"  :autoPlay="autoplay" :loop="loop"/> -->
-    <audio id="lagu" :controls="controls" autoplay :loop="loop">
-      <source src="../src/audio/lagu.mp3" type="audio/mpeg"/>
+    <audio id="lagu" autoplay :loop="loop">
+      <source src="../src/audio/lagu.mp3" type="audio/mp3"/>
     </audio>
     <hero1Vue/>
     <hero5Vue/>
@@ -10,6 +14,7 @@
     <hero3Vue/>
     <hero4Vue/>
     <footerVue/>
+  </div>
   </div>
 </template>
 
@@ -20,7 +25,6 @@ import hero3Vue from './components/hero3.vue';
 import hero4Vue from './components/hero4.vue';
 import hero5Vue from './components/hero5.vue';
 import footerVue from './components/footer.vue';
-// import vueAudio from 'vue-audio'
 export default {
   name: 'App',
   components: {
@@ -29,6 +33,7 @@ export default {
     hero3Vue,
     hero4Vue,
     hero5Vue,
+
     // vueAudio,
     footerVue
   },
@@ -36,25 +41,32 @@ export default {
     return{
       autoplay : true,
       loop : true,
-      controls : true
+      controls : true,
+      isLoading : true,
     }
   },
   methods: {
     lagu(){
-      if(window.onload){
+      if(this.isLoading == true){
+        this.isLoading == false;
       document.getElementById("lagu").play();
-    }
-  }
-      
+      }else{
+        this.isLoading == true
+      }
+
+      // if(this.isLoading == false){
+      // document.getElementById("lagu").play();
+      // document.getElementById("lagu").autoplay;
+
+  // }
+}
   },
   mounted() {    
-    this.lagu()
-    // this.autoplay = false;
-    // this.controls = true
-    // setTimeout(() => {
-    //         // this.autoplay = true;
-    // this.controls = false
-    //               }, 99000);
+    setTimeout(() => {
+      this.isLoading = false;
+      this.lagu()
+    }, 3000);
+
   },
  
 }
