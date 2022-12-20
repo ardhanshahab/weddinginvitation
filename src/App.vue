@@ -1,22 +1,15 @@
 <template>
   <div id="app">
-    <audio autoplay loop >
-    <source src="@/audio/lagu.mp3" type="audio/mpeg">
-    <!-- Browsermu tidak mendukung tag audio, upgrade donk! -->
+    <!-- <vueAudio src="../audio/lagu.mp3"  :autoPlay="autoplay" :loop="loop"/> -->
+    <audio id="lagu" :controls="controls" autoplay :loop="loop">
+      <source src="../src/audio/lagu.mp3" type="audio/mpeg"/>
     </audio>
-    <!-- <audio src="@/audio/lagu.mp3" id="my_audio" loop="loop" autoplay="autoplay"></audio> -->
-    <!-- <audio ref="audio" src="@/audio/lagu.mp3" typ="audio/mpeg"></audio> -->
-    <b-embed type="audio" hidden autoplay>
-    <source src="@/audio/lagu.mp3" type="audio/mpeg">
-    
-  </b-embed>
     <hero1Vue/>
     <hero5Vue/>
     <hero2Vue/>
     <hero3Vue/>
     <hero4Vue/>
     <footerVue/>
-    
   </div>
 </template>
 
@@ -27,6 +20,7 @@ import hero3Vue from './components/hero3.vue';
 import hero4Vue from './components/hero4.vue';
 import hero5Vue from './components/hero5.vue';
 import footerVue from './components/footer.vue';
+// import vueAudio from 'vue-audio'
 export default {
   name: 'App',
   components: {
@@ -35,21 +29,32 @@ export default {
     hero3Vue,
     hero4Vue,
     hero5Vue,
+    // vueAudio,
     footerVue
   },
+  data(){
+    return{
+      autoplay : true,
+      loop : true,
+      controls : true
+    }
+  },
   methods: {
-      lagu(){
-        this.$refs.audio.play()
-      }
+    lagu(){
+      if(window.onload){
+      document.getElementById("lagu").play();
+    }
+  }
+      
   },
   mounted() {    
-    if(window.onload){
-      this.lagu()
-
-    }
-    // var audio = new Audio('@/audio/lagu.mp3');
-    // window.onload();
-    // audio.play();
+    this.lagu()
+    // this.autoplay = false;
+    // this.controls = true
+    // setTimeout(() => {
+    //         // this.autoplay = true;
+    // this.controls = false
+    //               }, 99000);
   },
  
 }
