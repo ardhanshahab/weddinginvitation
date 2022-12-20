@@ -25,7 +25,7 @@
   <blockquote no-body class="overflow-hidden" text-variant="black" style="max-width: 540px; margin-top: 10px;">
     <b-row no-gutters>
       <b-col md="12">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0140570906465!2d107.59392711414452!3d-6.888919069324126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6603f5b8f93%3A0x65b023128ec2b79a!2sParis%20Van%20Java%2C%20Jl.%20Sukajadi%20No.131-139%2C%20Cipedes%2C%20Kec.%20Sukajadi%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040162!5e0!3m2!1sid!2sid!4v1671422662260!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0140570906465!2d107.59392711414452!3d-6.888919069324126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6603f5b8f93%3A0x65b023128ec2b79a!2sParis%20Van%20Java%2C%20Jl.%20Sukajadi%20No.131-139%2C%20Cipedes%2C%20Kec.%20Sukajadi%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040162!5e0!3m2!1sid!2sid!4v1671422662260!5m2!1sid!2sid" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </b-col>
     </b-row>
   </blockquote> 
@@ -45,10 +45,10 @@
       </b-col>
     </b-row>
   </b-card> 
-  <blockquote no-body class="overflow-hidden" text-variant="black" style="max-width: 540px;  margin-top: 10px;">
+  <blockquote no-body class="overflow-hidden" text-variant="black" style="max-width: auto;  margin-top: 10px;">
     <b-row no-gutters>
       <b-col md="12">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0140570906465!2d107.59392711414452!3d-6.888919069324126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6603f5b8f93%3A0x65b023128ec2b79a!2sParis%20Van%20Java%2C%20Jl.%20Sukajadi%20No.131-139%2C%20Cipedes%2C%20Kec.%20Sukajadi%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040162!5e0!3m2!1sid!2sid!4v1671422662260!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0140570906465!2d107.59392711414452!3d-6.888919069324126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6603f5b8f93%3A0x65b023128ec2b79a!2sParis%20Van%20Java%2C%20Jl.%20Sukajadi%20No.131-139%2C%20Cipedes%2C%20Kec.%20Sukajadi%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040162!5e0!3m2!1sid!2sid!4v1671422662260!5m2!1sid!2sid" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </b-col>
     </b-row>
   </blockquote> 

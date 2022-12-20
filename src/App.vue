@@ -1,15 +1,22 @@
 <template>
   <div id="app">
+    <audio autoplay loop >
+    <source src="@/audio/lagu.mp3" type="audio/mpeg">
+    <!-- Browsermu tidak mendukung tag audio, upgrade donk! -->
+    </audio>
+    <!-- <audio src="@/audio/lagu.mp3" id="my_audio" loop="loop" autoplay="autoplay"></audio> -->
+    <!-- <audio ref="audio" src="@/audio/lagu.mp3" typ="audio/mpeg"></audio> -->
+    <b-embed type="audio" hidden autoplay>
+    <source src="@/audio/lagu.mp3" type="audio/mpeg">
+    
+  </b-embed>
     <hero1Vue/>
     <hero5Vue/>
     <hero2Vue/>
     <hero3Vue/>
     <hero4Vue/>
     <footerVue/>
-    <audio hidden autoplay loop src="@/audio/lagu.mp3" type="audio/mpeg">
-    <!-- <source src="@/audio/lagu.mp3" type="audio/mpeg"> -->
-    <!-- Browsermu tidak mendukung tag audio, upgrade donk! -->
-    </audio>
+    
   </div>
 </template>
 
@@ -30,10 +37,20 @@ export default {
     hero5Vue,
     footerVue
   },
-  // mounted() {    
-  //   var audio = new Audio('@/audio/lagu.mp3');
-  //   audio.play();
-  // },
+  methods: {
+      lagu(){
+        this.$refs.audio.play()
+      }
+  },
+  mounted() {    
+    if(window.onload){
+      this.lagu()
+
+    }
+    // var audio = new Audio('@/audio/lagu.mp3');
+    // window.onload();
+    // audio.play();
+  },
  
 }
 </script>
@@ -45,6 +62,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
   /* margin-top: 60px; */
 }
 </style>

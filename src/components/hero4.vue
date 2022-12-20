@@ -7,36 +7,36 @@
       <h6 class="heading font-x2">Pesan dan Kesan</h6>
     </div>
     <div class="one_half first">
-      <div id="overflow" style="height: 300px;">
+      <div id="overflow" style="height: 300px; width: auto;">
       <div class="excerpt my-4 mx-2">
             <time datetime="2045-04-03T08:15+00:00">03 Apr 2045</time>
             <p class="heading">Enim odio in odio suspendisse commodo suscipit nisi nam tellus</p>
           </div>
-          <div class="excerpt my-4">
+          <div class="excerpt my-4 mx-2">
             <time datetime="2045-04-03T08:15+00:00">03 Apr 2045</time>
             <p class="heading">Enim odio in odio suspendisse commodo suscipit nisi nam tellus</p>
           </div>
-          <div class="excerpt my-4">
+          <div class="excerpt my-4 mx-2">
             <time datetime="2045-04-03T08:15+00:00">03 Apr 2045</time>
             <p class="heading">Enim odio in odio suspendisse commodo suscipit nisi nam tellus</p>
           </div>
-          <div class="excerpt my-4">
+          <div class="excerpt my-4 mx-2">
             <time datetime="2045-04-03T08:15+00:00">03 Apr 2045</time>
             <p class="heading">Enim odio in odio suspendisse commodo suscipit nisi nam tellus</p>
           </div>
-          <div class="excerpt my-4">
+          <div class="excerpt my-4 mx-2">
             <time datetime="2045-04-03T08:15+00:00">03 Apr 2045</time>
             <p class="heading">Enim odio in odio suspendisse commodo suscipit nisi nam tellus</p>
           </div>
-          <div class="excerpt my-4">
+          <div class="excerpt my-4 mx-2">
             <time datetime="2045-04-03T08:15+00:00">03 Apr 2045</time>
             <p class="heading">Enim odio in odio suspendisse commodo suscipit nisi nam tellus</p>
           </div>
-          <div class="excerpt my-4">
+          <div class="excerpt my-4 mx-2">
             <time datetime="2045-04-03T08:15+00:00">03 Apr 2045</time>
             <p class="heading">Enim odio in odio suspendisse commodo suscipit nisi nam tellus</p>
           </div>
-          <div class="excerpt my-4">
+          <div class="excerpt my-4 mx-2">
             <time datetime="2045-04-03T08:15+00:00">03 Apr 2045</time>
             <p class="heading">Enim odio in odio suspendisse commodo suscipit nisi nam tellus</p>
           </div>
@@ -59,7 +59,7 @@
           ></b-form-textarea>
           <div class="d-block my-4">
             <p style="margin-left: 1px;">Apakah anda akan hadir?</p>
-            <b-form-select v-model="selected" :options="options" style="padding:15px; border: 1px; margin-bottom: 20px; width: 535px;"></b-form-select>
+            <b-form-select v-model="selected" :options="options" style="padding:15px; border: 1px; margin-bottom: 20px; width: auto;"></b-form-select>
           </div>
           <button type="submit" value="submit">Submit</button>
         </fieldset>
