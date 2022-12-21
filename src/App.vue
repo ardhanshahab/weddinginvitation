@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div v-if="isLoading">
+    <div v-if="isLoading" class="successfully-saved">
       <div class="col-12 col-md-12 col-sm-12" style="background-color: #1C315E; width: auto; height: 100vh; color: white;">
         <p>Tanpa Mengurangi Rasa Hormat blablabla</p>
         <b-button @click="lagu()">cekson</b-button>
@@ -89,4 +89,23 @@ export default {
   overflow-x: hidden;
   /* margin-top: 60px; */
 }
+.elementToFadeInAndOut {
+    opacity: 1;
+    animation: opacity 2s linear;
+}
+.successfully-saved.hide-opacity{
+    opacity: 0;
+}
+
+.successfully-saved {
+    color: #FFFFFF;
+    text-align: center;
+
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+     opacity: 1;
+}
+
 </style>
